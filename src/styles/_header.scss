@@ -1,0 +1,49 @@
+.header{
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2e2e2e;
+  padding: 2.5rem;
+  height: 4.5rem;
+  gap: .5rem;
+
+  &__mobil{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+
+    .link__logo{
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .group{
+      display: flex;
+      align-items: center;
+
+      .search__icon{
+        position: absolute;
+        margin-left: .5rem;
+        color: #979797;
+      }
+
+      .grop__input{
+        background: #cfcfcf;
+        border: none;
+        outline: none;
+        padding: .4rem 2rem;
+        border-radius: 1rem;
+        width: 22rem;
+        color: #3c3c3c;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+}
