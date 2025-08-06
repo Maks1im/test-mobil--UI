@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 function Header() {
     return (
         <header className={"header"}>
-            
+
             <div className={"header__mobil"}>
                 <NavLink className={"link__logo"} to={"/"}>OK</NavLink>
                 <form className={"header__mobil-form"}>
