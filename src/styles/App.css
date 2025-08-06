@@ -97,6 +97,7 @@
   left: 0;
   padding: 1rem;
   border-radius: 0.5rem;
+  font-size: 18px;
 }
 .sidebar__menu .menu__menu__list {
   display: flex;
