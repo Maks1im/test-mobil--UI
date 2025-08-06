@@ -14,7 +14,19 @@
   flex-direction: column;
   gap: 0.5rem;
 }
-.header__mobil .link__logo {
+.header__mobil .header__menu__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12rem;
+}
+.header__mobil .header__menu__logo button {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+.header__mobil .header__menu__logo .link__logo {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -76,6 +88,20 @@
   .nav__list {
     gap: 4rem;
   }
+}
+
+.sidebar__menu {
+  position: absolute;
+  background: #2e2e2e;
+  top: 5.5rem;
+  left: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.sidebar__menu .menu__menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 * {

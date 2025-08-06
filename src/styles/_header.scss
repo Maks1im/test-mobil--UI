@@ -14,11 +14,24 @@
     flex-direction: column;
     gap: .5rem;
 
+    .header__menu__logo{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 12rem;
 
-    .link__logo{
-      font-size: 2rem;
-      font-weight: bold;
-      text-align: center;
+      button{
+        border: none;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+      }
+
+      .link__logo{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
     }
 
     .group{
