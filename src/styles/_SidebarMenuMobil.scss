@@ -1,15 +1,11 @@
+@use "mixins" as*;
+
 .sidebar__menu{
-  position: absolute;
-  background: #2e2e2e;
-  top: 5.5rem;
+  @include main-style;
+  top: 6rem;
   left: 0;
-  padding: 1rem;
-  border-radius: .5rem;
-  font-size: 18px;
 
   .menu__menu__list{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+    @include menu-style;
   }
 }

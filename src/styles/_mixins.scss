@@ -1,0 +1,15 @@
+//styles for modal
+
+@mixin main-style{
+  position: absolute;
+  background: #2e2e2e;
+  border-radius: .5rem;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+@mixin menu-style{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}

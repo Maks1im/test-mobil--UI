@@ -1,9 +1,11 @@
 import {NavLink} from "react-router-dom";
 import SidebarMenuMobil from "./SidebarMenuMobil.jsx";
 import {useState} from "react";
+import MenuOther from "./MenuOther.jsx";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOther, setIsOther] = useState(false);
 
     return (
         <header className={"header"}>
@@ -15,7 +17,7 @@ function Header() {
                         </svg>
                     </button>
                     <NavLink className={"link__logo"} to={"/"}>OK</NavLink>
-                    <button className={"menuBurder"}>
+                    <button onClick={() => setIsOther(!isOther)} className={"menuOther"}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30"  fill="currentColor" className="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                             <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
                         </svg>
@@ -31,6 +33,7 @@ function Header() {
                     </div>
                 </form>
                 {isOpen && (<SidebarMenuMobil/>)}
+                {isOther && (<MenuOther/>)}
             </div>
         </header>
     )
