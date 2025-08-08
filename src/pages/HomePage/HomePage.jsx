@@ -1,4 +1,4 @@
-import Header from "../../components/Header.jsx";
+import Header from "../../components/layout/Header.jsx";
 import MobileMenu from "../../components/MobilMenu.jsx";
 import Video from "../../components/Video-container.jsx";
 import SidebarMenuDesktop from "../../components/SidebarMenuDesktop.jsx";

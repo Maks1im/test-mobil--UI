@@ -1,0 +1,11 @@
+@use "../global/mixins" as*;
+
+.other{
+  @include main-style;
+  right: 0rem;
+  top: 6rem;
+
+  .navbar-nav__list{
+   @include menu-style
+  }
+}

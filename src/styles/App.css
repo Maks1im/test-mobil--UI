@@ -2,9 +2,11 @@
   position: sticky;
   top: 0;
   display: flex;
-  background: #2e2e2e;
+  background: rgba(46, 46, 46, 0.92);
+  backdrop-filter: blur(15px);
   gap: 0.5rem;
   z-index: 100;
+  box-shadow: 0px 14px 41px -5px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 1024px) {
   .header {
@@ -91,16 +93,28 @@
   width: 450px;
   height: 2.5rem;
   color: #ffffff;
+  transition: all 0.3s;
 }
-.header__desktop .form__search .group-desktop .grop__input-desktop:hover {
+.header__desktop .form__search .group-desktop .grop__input-desktop:focus {
+  width: 500px;
+}
+.header__desktop .add__account {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+}
+.header__desktop .add__account .add {
+  background: transparent;
   border: none;
+  color: white;
+  cursor: pointer;
 }
-.header__desktop .account {
+.header__desktop .add__account .account {
   padding: 1.3rem;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  margin-left: auto;
 }
 @media (max-width: 1024px) {
   .header__desktop {
@@ -195,7 +209,7 @@
 }
 @media (max-width: 768px) {
   .main-video-container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1rem;
     margin-right: 2rem;
   }
@@ -204,7 +218,8 @@
   .main-video-container {
     grid-template-columns: 1fr;
     gap: 0.8rem;
-    margin-right: 2rem;
+    margin: 0;
+    padding: 0.5rem;
   }
 }
 
@@ -224,9 +239,9 @@
 .navbar {
   position: sticky;
   top: 4.5rem;
-  font-size: 22.5px;
-  height: calc(100vh - 4.5rem);
-  margin-top: 1rem;
+  font-size: 21.5px;
+  height: calc(100vh - 6rem);
+  margin-top: 2rem;
   z-index: 99;
 }
 .navbar .menu-list-wrapper {
