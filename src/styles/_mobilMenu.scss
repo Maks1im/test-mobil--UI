@@ -24,11 +24,11 @@
   .active{
     color: #f76cff;
   }
-  
+
   @media (min-width: 1024px) {
     display: none;
   }
-  
+
   @media (min-width: 768px) {
     &__list{
       gap: 4rem;

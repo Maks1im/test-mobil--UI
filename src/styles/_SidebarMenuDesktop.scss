@@ -1,0 +1,39 @@
+.navbar{
+  position: sticky;
+  top: 4.5rem;
+  font-size: 22.5px;
+  height: calc(100vh - 4.5rem);
+  margin-top: 1rem;
+  z-index: 99;
+
+  .menu-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .menu-item{
+      padding: .8rem;
+
+      .links{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: .1s;
+
+        &:hover{
+          color: #f76cff;
+        }
+      }
+
+
+    }
+
+    .active{
+      color: #f76cff;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}

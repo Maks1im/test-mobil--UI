@@ -1,4 +1,6 @@
 .main-container {
+  display: flex;
+  flex-direction: row;
   padding: 1.4rem;
   max-width: 1920px;
   height: 100%;
@@ -10,21 +12,29 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.4rem;
   width: 100%;
+  margin-left: 2rem;
+
+  @media (min-width: 1920px) {
+    grid-template-columns: repeat(4, 1fr); // Максимум 4 видео на экранах 1920px и больше
+  }
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
+    margin-right: 2rem;
   }
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
     gap: .8rem;
+    margin-right: 2rem;
   }
 }
 
 .video-container {
   display: flex;
   flex-direction: column;
+  gap: .2rem;
 
   .video {
     width: 100%;

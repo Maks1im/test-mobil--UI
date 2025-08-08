@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import SidebarMenuMobil from "./SidebarMenuMobil.jsx";
 import {useState} from "react";
 import MenuOther from "./MenuOther.jsx";
@@ -9,6 +9,7 @@ function Header() {
 
     return (
         <header className={"header"}>
+            {/*mobil version*/}
             <div className={"header__mobil"}>
                 <div className={"header__menu__logo"}>
                     <button onClick={() => setIsOpen(!isOpen)} className={"menuBurder"}>
@@ -34,6 +35,19 @@ function Header() {
                 </form>
                 {isOpen && (<SidebarMenuMobil/>)}
                 {isOther && (<MenuOther/>)}
+            </div>
+            {/*desktop version*/}
+            <div className={"header__desktop"}>
+                <Link className={"link__logo-desktop"} to={"/"}>Ok</Link>
+                <form className={"form__search"}>
+                    <div className={"group-desktop"}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="search__icon-desktop" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                        <input placeholder={"Поиск"} type={"search"} className={"grop__input-desktop"}/>
+                    </div>
+                </form>
+                <button className={"account"}></button>
             </div>
         </header>
     )
