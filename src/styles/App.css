@@ -243,7 +243,7 @@
   font-size: 21.5px;
   height: calc(100vh - 6rem);
   z-index: 99;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .navbar .menu-list-wrapper {
   display: flex;
