@@ -2,7 +2,7 @@ import Header from "../../components/layout/Header.jsx";
 import SidebarMenuDesktop from "../../components/SidebarMenuDesktop.jsx";
 import MobilMenu from "../../components/MobilMenu.jsx";
 
-function accountPage () {
+function AccountPage() {
     return (
         <>
             <Header/>
@@ -10,21 +10,23 @@ function accountPage () {
                 <SidebarMenuDesktop/>
                 <div className={"user-mobile"}>
                     <header className={"header-user"}>
-                        <button className={"user-button"}></button>
-                        <div className={"user-info"}>
-                            <h1 className={"user-name"}>User</h1>
-                            <p>0 подпсчиков</p>
+                        <div className={"user-main"}>
+                            <button className={"user-button"}></button>
+                            <div className={"user-info"}>
+                                <h1 className={"user-name"}>User</h1>
+                                <p>0 подписчиков</p>
+                            </div>
                         </div>
                     </header>
                     <hr/>
                 </div>
                 <div className={"user-desktop"}>
                     <header className={"header-user"}>
-                        <button className={"user-button"}></button>
-                        <div className={"user-info"}>
-                            <h1 className={"user-name"}>User</h1>
-                            <p>0 подпсчиков</p>
-                        </div>
+                            <button className={"user-button"}></button>
+                            <div className={"user-info"}>
+                                <h1 className={"user-name"}>User</h1>
+                                <p>0 подписчиков</p>
+                            </div>
                     </header>
                     <hr/>
                 </div>
@@ -34,4 +36,4 @@ function accountPage () {
     )
 }
 
-export default accountPage
+export default AccountPage;

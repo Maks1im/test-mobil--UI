@@ -47,10 +47,12 @@ function UsersAccount () {
                 </div>
                 <div className={"user-desktop"}>
                     <header className={"header-user"}>
-                        <button className={"user-button"}></button>
-                        <div className={"user-info"}>
-                            <h1 className={"user-name"}>User</h1>
-                            <p>{subscribers} подписчиков</p>
+                        <div className={"user-main"}>
+                            <button className={"user-button"}></button>
+                            <div className={"user-info"}>
+                                <h1 className={"user-name"}>User</h1>
+                                <p>{subscribers} подписчиков</p>
+                            </div>
                         </div>
                         {isSubscribed ? (
                             <button onClick={toggleSubscribe} className={"sub-button"}>

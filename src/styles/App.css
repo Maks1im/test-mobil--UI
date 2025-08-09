@@ -355,11 +355,6 @@
   align-items: center;
   gap: 2rem;
 }
-.main-account .user-mobile .header-user .user-sub {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 .main-account .user-mobile hr {
   width: 100%;
 }
