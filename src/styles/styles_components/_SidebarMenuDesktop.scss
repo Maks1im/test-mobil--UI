@@ -24,14 +24,28 @@
           color: #f76cff;
         }
       }
-
-
     }
 
     .active{
       color: #f76cff;
     }
+
+    .about__us{
+      display: flex;
+      flex-direction: column;
+      gap: .6rem;
+
+      a{
+        color: #aaaaaa;
+      }
+
+      p{
+        color: #aaaaaa;
+        font-size: 1.2rem;
+      }
+    }
   }
+
   
   @media (max-width: 1024px) {
     display: none;
