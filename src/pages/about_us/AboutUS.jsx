@@ -29,7 +29,7 @@ function AboutUS() {
                                 </div>
                             </div>
                             <div className={"card"}>
-                                <h2>Зам Ген.директор</h2>
+                                <h2>Зам Ген.директора</h2>
                                 <p>Ижболди Иван Сергеевич <br/> основатель и зам ген.директора</p>
                                 <div className={"icons"}>
                                     <a href={"https://t.me/JordanMoretto"}>
