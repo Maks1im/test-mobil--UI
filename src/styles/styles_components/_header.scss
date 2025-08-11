@@ -109,24 +109,22 @@
       }
     }
 
-    .add__account {
+    .add-div {
       display: flex;
       align-items: center;
       gap: 2rem;
       margin-left: auto;
 
-      .add, .account {
+      .add{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
         background: transparent;
         border: none;
         color: white;
         cursor: pointer;
         transition: .3s;
-      }
-
-      .account {
-        padding: 1.3rem;
-        border-radius: 50%;
-        background: white;
       }
     }
 
