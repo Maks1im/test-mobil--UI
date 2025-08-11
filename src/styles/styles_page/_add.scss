@@ -1,0 +1,79 @@
+@use "../global/mixins" as*;
+
+.add__main{
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: row;
+
+  .main-container{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width:40rem;
+
+    .form__add {
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+
+      .custum-file-upload {
+        width: 25rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed #cacaca;
+        background-color: rgb(60, 60, 60);
+        border-radius: 10px;
+        box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+
+        .icon, .text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .icon svg {
+          height: 80px;
+          fill: white;
+        }
+
+        .text span {
+          font-weight: 400;
+          color: white;
+        }
+
+        input {
+          display: none;
+        }
+
+        @media (max-width: 768px) {
+          width: 18rem;
+          align-content: center;
+        }
+      }
+
+      .Name{
+        padding: 1rem;
+        border: none;
+        background: transparent;
+        outline: none;
+        color: white;
+        font-size: 1rem;
+      }
+
+      .add-btn{
+        @include buttonStyle;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: .7rem;
+  }
+}

@@ -61,6 +61,10 @@ function AboutUS() {
                                 </div>
                             </div>
                         </div>
+                        <div className={"about_products"}>
+                            <h1>О продукте</h1>
+                            <h2>Ok - это место где ты можешь стать свободным!</h2>
+                        </div>
                     </div>
                 </div>
                 <MobilMenu/>

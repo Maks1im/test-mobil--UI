@@ -1,4 +1,4 @@
-.header{
+.header {
   position: sticky;
   top: 0;
   display: flex;
@@ -13,26 +13,26 @@
     justify-content: center;
   }
 
-  &__mobil{
+  &__mobil {
     display: flex;
     flex-direction: column;
     gap: .5rem;
     height: 6rem;
     padding: .5rem 0;
 
-    .header__menu__logo{
+    button {
+      border: none;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+    }
+
+    .header__menu__logo {
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      button{
-        border: none;
-        background: transparent;
-        color: white;
-        cursor: pointer;
-      }
-
-      .link__logo{
+      .link__logo {
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
@@ -40,17 +40,17 @@
       }
     }
 
-    .group{
+    .group {
       display: flex;
       align-items: center;
 
-      .search__icon{
+      .search__icon {
         position: absolute;
         margin-left: .5rem;
         color: #979797;
       }
 
-      .grop__input{
+      .grop__input {
         background: #cfcfcf;
         border: none;
         outline: none;
@@ -67,7 +67,7 @@
     }
   }
 
-  &__desktop{
+  &__desktop {
     display: flex;
     align-items: center;
     padding: 0 6rem;
@@ -75,64 +75,61 @@
     width: 100%;
     gap: 5rem;
 
-    .link__logo-desktop{
+    .link__logo-desktop {
       font-size: 2.5rem;
       font-weight: bold;
       font-family: sans-serif;
     }
 
-    .form__search {
+    .form__search .group-desktop {
+      position: relative;
+      display: flex;
+      align-items: center;
 
+      .search__icon-desktop {
+        position: absolute;
+        left: 15px;
+        color: #979797;
+      }
 
-      .group-desktop {
-        position: relative;
-        display: flex;
-        align-items: center;
+      .grop__input-desktop {
+        background: #2c2c2c;
+        border: 2px solid #a1a1a1;
+        outline: none;
+        padding-left: 2.5rem;
+        border-radius: 1rem;
+        width: 450px;
+        height: 2.5rem;
+        color: #ffffff;
+        transition: all .3s;
 
-        .search__icon-desktop {
-          position: absolute;
-          left: 15px;
-          color: #979797;
-        }
-
-        .grop__input-desktop {
-          background: #2c2c2c;
-          border: 2px solid #a1a1a1;
-          outline: none;
-          padding-left: 2.5rem;
-          border-radius: 1rem;
-          width: 450px;
-          height: 2.5rem;
-          color: #ffffff;
-          transition: all .3s;
-
-          &:focus{
-            width: 500px;
-          }
+        &:focus {
+          width: 500px;
         }
       }
     }
 
-    .add__account{
+    .add__account {
       display: flex;
       align-items: center;
       gap: 2rem;
       margin-left: auto;
 
-      .add{
+      .add, .account {
         background: transparent;
         border: none;
         color: white;
         cursor: pointer;
+        transition: .3s;
       }
 
-      .account{
+      .account {
         padding: 1.3rem;
         border-radius: 50%;
-        border: none;
-        cursor: pointer;
+        background: white;
       }
     }
+
     @media (max-width: 1024px) {
       display: none;
     }

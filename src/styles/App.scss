@@ -1,15 +1,20 @@
 @use "styles_components/header";
 @use "styles_components/mobilMenu";
-@use "styles_components/SidebarMenuMobil";
-@use "styles_components/menuOther";
+@use "modal_styles/SidebarMenuMobil";
+@use "modal_styles/menuOther";
 @use "styles_components/videoContainer";
 @use "styles_components/SidebarMenuDesktop";
 @use "styles_page/userPage";
 @use "styles_page/aboutUs";
+@use "styles_page/add";
 
-*{margin: 0; padding: 0; box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body{
+body {
   font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
@@ -17,13 +22,13 @@ body{
   color: white;
   width: 100%;
   height: 100vh;
+}
 
-  li{
-    list-style: none;
-  }
+li {
+  list-style: none;
+}
 
-  a{
-    text-decoration: none;
-    color: white;
-  }
+a {
+  text-decoration: none;
+  color: white;
 }

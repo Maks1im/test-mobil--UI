@@ -1,10 +1,17 @@
 .nav{
   position: fixed;
   bottom: 0;
-  z-index: 1000;
+  z-index: 998;
   height: 4.5rem;
   width: 100%;
   background: #2e2e2e;
+
+  button{
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
 
 
     &__list{
