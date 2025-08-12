@@ -11,7 +11,7 @@ function AccountPage() {
                 <div className={"user-mobile"}>
                     <header className={"header-user"}>
                         <div className={"user-main"}>
-                            <button className={"user-button"}></button>
+                            <img className={"user-image"} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Y3iSpcthhC3YArWBTB127frG2JyPLIcwnw&s"} alt={"dcd"}/>
                             <div className={"user-info"}>
                                 <h1 className={"user-name"}>User</h1>
                                 <p>0 подписчиков</p>
@@ -22,7 +22,7 @@ function AccountPage() {
                 </div>
                 <div className={"user-desktop"}>
                     <header className={"header-user"}>
-                            <button className={"user-button"}></button>
+                        <img className={"user-image"} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Y3iSpcthhC3YArWBTB127frG2JyPLIcwnw&s"} alt={"dcd"}/>
                             <div className={"user-info"}>
                                 <h1 className={"user-name"}>User</h1>
                                 <p>0 подписчиков</p>

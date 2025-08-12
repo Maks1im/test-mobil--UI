@@ -10,7 +10,7 @@ function Video() {
                     allowFullScreen
                 ></iframe>
                 <h3>фильм - социальная сеть</h3>
-                <Link to={"/user"}>аккаунт</Link>
+                <Link className={"link__to__user"} to={"/user"}>аккаунт</Link>
                 <p>0 просмотров</p>
             </div>
         </Link>

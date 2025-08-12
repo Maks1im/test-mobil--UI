@@ -15,14 +15,19 @@
       display: flex;
       align-items: center;
       gap: 2rem;
+      margin-top: 2.2rem;
 
       .user-info {
         display: flex;
         flex-direction: column;
       }
 
-      .user-button {
-        @include circleButton;
+      .user-image {
+        width: 6.5rem;
+        border-radius: 2rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
       }
 
       .sub-button {

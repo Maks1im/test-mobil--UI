@@ -252,6 +252,12 @@
   border-radius: 1rem;
   box-shadow: 0px 0px 42px 6px rgba(0, 0, 0, 0.2);
 }
+.video-container .link__to__user {
+  transition: all 0.1s;
+}
+.video-container .link__to__user:hover {
+  color: #cfcfcf;
+}
 
 .navbar {
   position: sticky;
@@ -315,24 +321,20 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin-top: 2.2rem;
 }
 .main-account .user-desktop .header-user .user-info,
 .main-account .user-mobile .header-user .user-info {
   display: flex;
   flex-direction: column;
 }
-.main-account .user-desktop .header-user .user-button,
-.main-account .user-mobile .header-user .user-button {
-  padding: 2.8rem;
-  border-radius: 50%;
-  border: none;
-  background: white;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.main-account .user-desktop .header-user .user-button:hover,
-.main-account .user-mobile .header-user .user-button:hover {
-  opacity: 0.8;
+.main-account .user-desktop .header-user .user-image,
+.main-account .user-mobile .header-user .user-image {
+  width: 6.5rem;
+  border-radius: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .main-account .user-desktop .header-user .sub-button,
 .main-account .user-mobile .header-user .sub-button {
