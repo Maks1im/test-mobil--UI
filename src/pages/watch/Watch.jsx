@@ -21,7 +21,7 @@ function Watch (){
                         src=""
                         className="watch__embed-video"
                     ></iframe>
-                    <h1>Название видео</h1>
+                    <h2>Название видео</h2>
                     <div className={"info-video"}>
                         <div className={"user-info"}>
                             <Link to={"/user"}><button className={"account-btn"}></button></Link>
