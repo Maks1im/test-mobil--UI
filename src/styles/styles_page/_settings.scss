@@ -1,0 +1,49 @@
+.main__settings__container{
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: row;
+
+  .settings{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    gap: 2rem;
+
+      .menu__list__settings{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 550;
+
+        .menu__item{
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+
+          input{
+            border: 2px solid blueviolet;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-radius: 1rem;
+            padding: 0.3rem 1.5rem;
+            font-size: 1.3rem;
+            background: transparent;
+            color: white;
+            outline: none;
+          }
+
+          button{
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
+  }
+}

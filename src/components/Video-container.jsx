@@ -1,24 +1,20 @@
-import {Link} from "react-router-dom";
-import {useState} from "react";
+import { Link, useNavigate } from "react-router-dom";
 
-function Video () {
-    const [views, setviews] = useState(0);
-    function viewsF(){
-        setviews(prevViews => prevViews + 1)
-    }
-
+function Video() {
     return (
-        <div className={"video-container"}>
-            <iframe
-                className="video"
-                src=""
-                allowFullScreen
-            ></iframe>
-            <h3>фильм - социальная сеть</h3>
-            <Link to={"/user"}>аккаунт</Link>
-            <p>{views} просмотров</p>
-        </div>
-    )
+        <Link to="/watch" className="video-link">
+            <div className={"video-container"}>
+                <iframe
+                    className="video"
+                    src=""
+                    allowFullScreen
+                ></iframe>
+                <h3>фильм - социальная сеть</h3>
+                <Link to={"/user"}>аккаунт</Link>
+                <p>0 просмотров</p>
+            </div>
+        </Link>
+    );
 }
 
 export default Video;

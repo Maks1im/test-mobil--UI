@@ -1,7 +1,7 @@
 @use "../global/mixins" as*;
 
 .other{
-  @include main-style;
+  @include main-style-modal;
   right: 0rem;
   top: 6rem;
 
