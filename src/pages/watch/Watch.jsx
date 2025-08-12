@@ -3,6 +3,7 @@ import MobilMenu from "../../components/MobilMenu.jsx";
 import SidebarMenuDesktop from "../../components/SidebarMenuDesktop.jsx";
 import {Link} from "react-router-dom";
 import {useState} from "react";
+import Video from "../../components/Video-container.jsx";
 
 function Watch (){
     const [isSubscribed, setIsSubscribed] = useState(false);
@@ -24,7 +25,7 @@ function Watch (){
                     <h2>Название видео</h2>
                     <div className={"info-video"}>
                         <div className={"user-info"}>
-                            <Link to={"/user"}><button className={"account-btn"}></button></Link>
+                            <Link to={"/user"}><img className={"user-image"} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpfGHkeCLGjmS7un5J8V8_C9Mh6cyKyDvI8Q&s"} alt={"dcd"}/></Link>
                             <h2>user</h2>
                             {isSubscribed ? (
                                 <button onClick={toggleSubscribe} className={"sub-button"}>
@@ -46,6 +47,13 @@ function Watch (){
                             <p>0 лайков</p>
                         </div>
                     </div>
+                </div>
+                <div className={"video-player"}>
+                    <Video/>
+                    <Video/>
+                    <Video/>
+                    <Video/>
+                    <Video/>
                 </div>
             </div>
             <MobilMenu/>
